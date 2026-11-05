@@ -1,3 +1,4 @@
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -19,4 +20,33 @@ img {
 }
 p {
     padding: 10px;
+}
+main {
+    max-width: 800px;
+
+}
+p{
+    padding: 0;
+}
+main img{
+    width: 150px;
+    height: auto;
+}
+aside{
+    width: 250px;
+    margin: 0;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, , 0.2);
+    background-color: rgb(140, 127, 127);
+    color: #0f0e0e;
+    text-align: center;
+}
+aside img{
+    width: 200px;
+    height: auto;
+}
+footer{
+    margin-top: 20px;
+    border-top: 2px solid #5570b8;
+    text-align: center;
 }
