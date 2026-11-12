@@ -8,9 +8,6 @@
     --cor-fundo-nav: rgb(145, 220, 187);
     --cor-texto-nav: black;
     --cor-texto-h1: rgb(50, 106, 82);
-    --cor-texto-paragrafo: black;
-    --border: 1px solid rgb(50, 106, 82);
-    --padding-zero: 0;
     --fonte-titulo: Arial, Helvetica, sans-serif;
     --fonte-texto: Arial, Helvetica, sans-serif;
 }
@@ -24,7 +21,7 @@ header, main, footer{
     color: var(--cor-texto-nav);
 }
 
-h1, h2, h3{
+h1, h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-texto-h1);
     text-align: center;
@@ -59,6 +56,10 @@ img {
 .hero {
     position: relative;
 }
+.hero h1{
+    position: absolute;
+}
+
 .hero article img {
     float: right;
     width: 125px;
@@ -68,7 +69,7 @@ img {
     width: 100%;
     height: auto;
 }
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
 }
 footer p {
