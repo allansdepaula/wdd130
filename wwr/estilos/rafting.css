@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-fundo-nav: rgb(145, 220, 187);
+    --cor-texto-nav: black;
+    --cor-texto-h1: rgb(50, 106, 82);
+    --cor-texto-paragrafo: black;
+    --border: 1px solid rgb(50, 106, 82);
+    --padding-zero: 0;
+    --fonte-titulo: Arial, Helvetica, sans-serif;
+    --fonte-texto: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto-nav);
+}
+header, main, footer{
+    width: 840px;
+    margin: 0 auto;
+    color: var(--cor-texto-nav);
+}
+
+h1, h2, h3{
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto-h1);
+    text-align: center;
+}
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--cor-fundo-nav);
+}
+nav, p, section, article{
+    margin: 16px;
+    padding: 8px;
+}
+nav {
+    background-color: var(--cor-fundo-nav);
+    padding: 10px;
+}
+nav a {
+    color: var(--cor-texto-nav);
+    display: block;
+    padding: 5px;
+}
+img {
+    width: 150px;
+    height: auto;
+    padding: 2px;    
+}
+.hero {
+    position: relative;
+}
+.hero article img {
+    float: right;
+    width: 125px;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.redes-sociais a {
+    text-decoration: none;
+}
+footer p {
+    text-align: center;
+}
