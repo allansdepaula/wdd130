@@ -19,6 +19,11 @@ body {
     color: #333;
 }
 
+nav li {
+    flex:  1 1 auto;
+
+}
+
 .item1 {
     min-height: 100px;
 }

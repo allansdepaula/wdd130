@@ -13,16 +13,23 @@
 }
 
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: var(--cor-fundo-nav);
     padding: 10px;
-}
+    }
 nav a {
     color: var(--cor-texto-nav);
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 h1 {
     color: var(--cor-texto-h1);
+    border-bottom:  1px solid darkblue;
 }
 img {
     width: 150px;
@@ -32,10 +39,6 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
-main {
-    max-width: 800px;
-
-}
 p {
     padding: var(--padding-zero);
     color: var(--cor-texto-paragrafo);
@@ -53,6 +56,7 @@ aside{
     width: 250px;
     margin: 0;
     text-align: center;
+    grid-row: 1;
 }
 aside h2{
     position: absolute;
@@ -76,4 +80,14 @@ footer{
     border: 1px solid rgb(0 0 0 / 10%);
     background-color: rgb(140, 127, 127);
     color: black;
+}
+header, footer,
+.grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
 }
