@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="estilos/formulario-pesquisa.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Pesquisa</title>
+    </head>
+    <body>
+    <header>
+        <div>
+            <h1> WDD 130 | Formulário HTML - Enquete do Usuário</h1> 
+        </div>
+    </header>
+    <main>
+        
+       <form>
+            <h2>Informações de Contato</h2>
+            <div class="item-formulario coluna2">
+            <label for="nomecompleto">Nome Completo:</label>
+            <input type="text" id="nome-completo" name="nome-completo" required>
+            </div>
+            <div class="item-formulario coluna2">
+            <label for="e-mail">E-mail:</label>
+            <input type="text" id="emaildousuario" name="emaildousuario" required>
+            </div>
+       </form>
+
+       
+
+        <form>
+            <h2>Perguntas</h2>
+            <div class="item-formulario coluna1">
+                <label for="navegador">Qual é o seu navegador favorito?</label>
+                <select name="navegador" id="navegador">
+                    <option value="1">Chrome</option>
+                    <option value="2">Firefox</option>
+                    <option value="3">Edge</option>
+                    <option value="4">Safari</option>
+                    <option value="5">Brave</option>
+                    <option value="6">Opera</option>
+                </select>
+            </div>
+            <div class="item-formulario coluna1">     
+                <label>Você tem um bichinho de estimação em casa?" <input type="checkbox" id="pet" name="pet"></label>
+            </div>
+      
+            <label for="feedback">Liste os lugares onde você morou:</label>
+            <textarea name="feedback" id="feedback" rows="4" placeholder="São Paulo, Sant André, Ribeirão Pires, Rio Grande da Serra"></textarea>
+            
+        </form>
+        <form>
+            <button type="submit">Enviar Pesquisa</button>
+        </form>
+
+
+    </main>
+    
+    <footer>
+        <p>©2026 Farmulário de Pesquisa | Allan Silverio de Paula</p>
+        
+    </footer>
+</body>
