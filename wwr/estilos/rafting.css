@@ -33,6 +33,21 @@ header, main, footer{
     margin: 0 auto;
     color: var(--cor-texto-nav);
 }
+nav, p, section, article{
+    margin: 16px;
+    padding: 8px;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+nav a {
+    color: var(--cor-texto-nav);
+    display: block;
+    padding: 5px;
+}
 .historia {
     display: grid;
     grid-template-columns: 1fr 180px 1fr;
@@ -78,37 +93,9 @@ h1 {
     top: 20px;
     width: 100%;
     padding: 16px;
-    text-align: center;
     opacity: 0.7;
     background-color: var(--cor-fundo-nav);
 }
-:where(body:not(.pagina-contato)) :is(nav, p, section, article) {
-    margin: 16px;
-    padding: 8px;
-}
-:where(body:not(.pagina-contato)) nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
-}
-:where(body:not(.pagina-contato)) nav a {
-    color: var(--cor-texto-nav);
-    display: block;
-    padding: 5px;
-}
-:where(body:not(.pagina-contato)) img {
-    width: 150px;
-    height: auto;
-    padding: 2px;    
-}
-:where(body:not(.pagina-contato)) .hero {
-    position: relative;
-}
-:where(body:not(.pagina-contato)) h1 {
-    position: absolute;
-}
-
 .hero article {
     position: absolute;
     top: 55%;
@@ -127,6 +114,12 @@ h1 {
     display: block;
     width: 100%;
     height: auto;
+}
+.hero {
+    position: relative;
+}
+.hero h1{
+    position: absolute;
 }
 footer a {
     text-decoration: none;
@@ -173,14 +166,11 @@ footer p {
     border-radius: 12px;
 }
 
-.pagina-contato address {
+.pagina-contato address,
+.pagina-contato h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-texto-h1);
     text-align: center;
-}
-
-.pagina-contato address,
-.pagina-contato h2 {
     top: 20px;
     width: 400px;
     padding: 16px;
