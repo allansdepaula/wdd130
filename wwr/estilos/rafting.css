@@ -124,9 +124,6 @@ h1 {
 footer a {
     text-decoration: none;
 }
-footer p {
-    text-align: center;
-}
 footer {
     display: flex;
     align-items: center;
@@ -135,6 +132,7 @@ footer {
 }
 
 footer p {
+    text-align: center;
     flex: 1;
     margin: 0;
 }
@@ -185,6 +183,7 @@ footer p {
 
 .pagina-contato .contato iframe {
     width: 100%;
+    border: 0;
 }
 
 .pagina-contato form {
