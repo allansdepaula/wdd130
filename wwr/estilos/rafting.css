@@ -75,7 +75,6 @@ h1, h2 {
     text-align: center;
 }
 h1 {
-    position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -83,30 +82,30 @@ h1 {
     opacity: 0.7;
     background-color: var(--cor-fundo-nav);
 }
-nav, p, section, article{
+:where(body:not(.pagina-contato)) :is(nav, p, section, article) {
     margin: 16px;
     padding: 8px;
 }
-nav {
+:where(body:not(.pagina-contato)) nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 10px;
 }
-nav a {
+:where(body:not(.pagina-contato)) nav a {
     color: var(--cor-texto-nav);
     display: block;
     padding: 5px;
 }
-img {
+:where(body:not(.pagina-contato)) img {
     width: 150px;
     height: auto;
     padding: 2px;    
 }
-.hero {
+:where(body:not(.pagina-contato)) .hero {
     position: relative;
 }
-.hero h1{
+:where(body:not(.pagina-contato)) h1 {
     position: absolute;
 }
 
@@ -164,4 +163,86 @@ footer p {
     width: 28px;
     height: auto;
     padding: 0;
+}
+
+/* Página de contato */
+.pagina-contato main {
+    max-width: 840px;
+    background-color: #dadada;
+    padding: 10px 30px 30px;
+    border-radius: 12px;
+}
+
+.pagina-contato address {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-texto-h1);
+    text-align: center;
+}
+
+.pagina-contato address,
+.pagina-contato h2 {
+    top: 20px;
+    width: 400px;
+    padding: 16px;
+    margin: 0 auto;
+}
+
+.pagina-contato .contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.pagina-contato .contato iframe {
+    width: 100%;
+}
+
+.pagina-contato form {
+    display: grid;
+    gap: 10px;
+}
+
+.pagina-contato label {
+    margin-top: 15px;
+}
+
+.pagina-contato :is(input, textarea, button) {
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.pagina-contato button {
+    margin-top: 15px;
+    background-color: #3a3ab8;
+    color: #fff;
+}
+
+.pagina-contato :is(.coluna1, .coluna2) {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    align-items: center;
+    column-gap: 8px;
+}
+
+.pagina-contato :is(.coluna1, .coluna2) label {
+    margin-top: 0;
+}
+
+.pagina-contato .coluna3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pagina-contato .coluna4 textarea {
+    display: block;
+    width: 100%;
+}
+
+.pagina-contato .galeria {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pagina-contato .galeria img {
+    display: grid;
 }
